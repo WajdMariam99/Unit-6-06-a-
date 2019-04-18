@@ -3,17 +3,18 @@
 -- Created by: Wajd Mariam
 -- Created on: April 17, 2019
 -----------------------------------------------------------------------------------------
+display.setStatusBar(display.HiddenStatusBar)
 
-local Zombie = display.newImageRect ("assets/sprites/ZombieImage.png," , 100, 200 )
-Zombie.x = display.contentCenterX
-Zombie.y = display.contentCenterY
-Zombie.id = "Zombie Image"
+local Ninja = display.newImageRect ("assets/sprites/Ninja.png" , 150, 200 )
+Ninja.x = 115
+Ninja.y = 200
+Ninja.ID = "Ninja Image"
 
 
-for loopCounter = 1, 10 do 
+for loopCounter = 1, 10, 1 do 
 
     print(loopCounter)
 
-    Zombie.x = Zombie.x + 4
+    Ninja.x = Ninja.x + 4
 
 end
